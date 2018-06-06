@@ -1,0 +1,52 @@
+<!-- # Bujumbura
+
+## File
+
+* [`bujumbura-easier`](Unsolved/bujumbura-easier.html) or [`bujumbura-harder`](Unsolved/bujumbura-harder.html)
+
+## Instructions
+
+* Using either `bujumbura-easier.html` or `bujumbura-harder.html` as a starting point, add in the missing code necessary to accomplish the following:
+
+  * Query the [OpenWeatherMap API](http://openweathermap.org/api) for the current weather data on Bujumbura, Burundi.
+
+  * Log the retrieved data from this query to console.
+
+  * Parse the retrieved data to display wind speed, humidity, and temperature information into the HTML.
+
+  * **HINT:** You will need to request an API key from the website.
+
+  * **BONUS:** Figure out how to convert the Kelvin temperature provided into Fahrenheit.
+
+  * **NOTE:** Don't worry if this feels hard. Push yourself! -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bujumbura Data</title>
+</head>
+<body>
+  <!-- Retrieved data will be dumped here -->
+  <div class="city"></div>
+  <div class="wind"></div>
+  <div class="humidity"></div>
+  <div class="temp"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Things to accomplish:
+    var queryURL = "api.openweathermap.org/data/2.5/weather?q=cleveland"
+    // Get an API Key from OpenWeatherMap API
+    // Create an AJAX call to retrieve data Log the data in console
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    })
+    // Log the data in HTML
+    .then(function(response){
+        
+    })
+    // Scream Ushindi (victory in Swahili)! at the top of your lungs
+  </script>
+</body>
+</html>
